@@ -85,3 +85,124 @@ body{
     }
   }
 }
+
+.about-us{
+  padding: 122px 215px 120px 215px;
+  display: flex;
+  background-color: #ebebeb;
+
+  &__icon{
+    min-width: 380px;
+    height: 555px;
+    background: rgba(10,50,150,0.3) url("../img/deathtostock-wired8.png");
+    &__item{
+      margin: 75px 0 44px;
+    }
+    &__title{
+    }
+  }
+  &__description{
+    padding-top: 58px;
+  }
+  &__text{
+    margin-left: 123px;
+    margin-right: 34px;
+    color: #665f60;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400
+  }
+  &__button{
+    margin-left: 348px;
+    margin-top: 73px;
+    width: 195px;
+    height: 50px;
+    border: 1px solid #7d7a7c;
+    background-color: #ebebeb;
+    color: #7d7a7c;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+  }
+}
+
+.icon{
+  text-align: center;
+  &__title{
+    color: #fefbfc;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47.13px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.services{
+  padding: 0 215px 0 215px;
+  display: flex;
+  background-color: #ebebeb;
+
+  &__table{
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    &__item{
+      min-width: 380px;
+      max-width: 380px;
+      height: 400px;
+      text-align: center;
+
+      &--light{
+        background-color: #ebebeb;
+      }
+
+      &--dark{
+        background-color: #dbdbdb;
+      }
+
+      &__image{
+        margin-top: 99px;
+      }
+
+      &__title{
+        color: #665f60;
+        font-family: "PT Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 30px 0 21px;
+      }
+
+      &__description{
+        color: #665f60;
+        font-family: "PT Sans", sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        padding: 0 94px;
+      }
+    }
+  }
+
+  &__icon{
+    width: 410px;
+    height: 799px;
+    background: rgba(10,50,150,0.3) url("../img/unsplash-523ae1f5502d6-1.png");
+
+    &__item{
+      margin: 116px 0 32px;
+    }
+
+    &__title{
+
+    }
+
+    &__description{
+      color: #fefcfd;
+      font-family: "Open Sans", sans-serif;
+      font-size: 17px;
+      padding: 110px 32px 0;
+    }
+  }
+}
