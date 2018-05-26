@@ -109,10 +109,6 @@
             <h2 class="team__title">MEET OUR TEAM</h2>
         </div>
         <div class="team__slider">
-            <!--<div class="team__slider__prev">-->
-                <!--<img src="img/interface-&#45;&#45;arrow-left-b.png" alt="prev">-->
-            <!--</div>-->
-
             <div class="team__slider__body">
                 <div class="team__slider__item current">
                     <img src="img/layer-1.png" alt="team-member-1" class="team__slider__item__img">
@@ -167,10 +163,19 @@
                     </div>
                 </div>
             </div>
-
-            <!--<div class="team__slider__next">-->
-                <!--<img src="img/interface-&#45;&#45;arrow-right-b.png" alt="next">-->
-            <!--</div>-->
+        </div>
+    </section>
+    <section class="contact">
+        <div id="map"></div>
+        <div class="contact__content">
+            <img src="img/layer-7.png" alt="location-icon" class="contact__icon">
+            <h2 class="contact__title">GET IN TOUCH</h2>
+            <form action="" class="contact__form">
+                <input type="text" class="contact__form__input" placeholder="Your Name *">
+                <input type="email" class="contact__form__input" placeholder="Your Email *"><br>
+                <textarea name="message" id="" cols="30" rows="10" class="contact__form__textarea" placeholder="Your Message *"></textarea><br>
+                <button class="contact__form__button">SEND MESSAGE</button>
+            </form>
         </div>
     </section>
 </div>
@@ -178,5 +183,9 @@
 <script src="slick-carousel/slick/slick.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/my-slick.js"></script>
+<script src="js/google-map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJUvjQMEB26TCf9RiYNNi0j7311SMynw4&callback=initMap">
+</script>
 </body>
 </html>
