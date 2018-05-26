@@ -1,21 +1,21 @@
 $(document).ready(function(){
-    $('.next').click(function() {
-        var currentImage = $('.slider__item.current');
-        var currentIndicator = $('.indicators__item.current');
-        var currentImageIndex = $('.slider__item.current').index();
-        var currentIndicatorIndex = $('.indicators__item.current').index();
+    $('.works__slider__next').click(function() {
+        var currentImage = $('.works__slider__item.current');
+        var currentIndicator = $('.works__slider__indicators__item.current');
+        var currentImageIndex = $('.works__slider__item.current').index();
+        var currentIndicatorIndex = $('.works__slider__indicators__item.current').index();
         var nextImageIndex = currentImageIndex + 1;
         var nextIndicatorIndex = currentIndicatorIndex + 1;
-        var nextImage = $('.slider__item').eq(nextImageIndex);
-        var nextIndicator = $('.indicators__item').eq(nextIndicatorIndex);
+        var nextImage = $('.works__slider__item').eq(nextImageIndex);
+        var nextIndicator = $('.works__slider__indicators__item').eq(nextIndicatorIndex);
         currentImage.fadeOut(1000);
         currentImage.removeClass('current');
         currentIndicator.removeClass('current');
 
-        if(nextImageIndex == ($('.slider__item:last').index() + 1)){
-            $('.slider__item').eq(0).fadeIn(1000);
-            $('.slider__item').eq(0).addClass('current');
-            $('.indicators__item').eq(0).addClass('current');
+        if(nextImageIndex == ($('.works__slider__item:last').index() + 1)){
+            $('.works__slider__item').eq(0).fadeIn(1000);
+            $('.works__slider__item').eq(0).addClass('current');
+            $('.works__slider__indicators__item').eq(0).addClass('current');
         } else {
             nextImage.fadeIn(1000);
             nextImage.addClass('current');
@@ -23,15 +23,15 @@ $(document).ready(function(){
         }
     });
 
-    $('.prev').click(function() {
-        var currentImage = $('.slider__item.current');
-        var currentIndicator = $('.indicators__item.current');
-        var currentImageIndex = $('.slider__item.current').index();
-        var currentIndicatorIndex = $('.indicators__item.current').index();
+    $('.works__slider__prev').click(function() {
+        var currentImage = $('.works__slider__item.current');
+        var currentIndicator = $('.works__slider__indicators__item.current');
+        var currentImageIndex = $('.works__slider__item.current').index();
+        var currentIndicatorIndex = $('.works__slider__indicators__item.current').index();
         var prevImageIndex = currentImageIndex - 1;
         var prevIndicatorIndex = currentIndicatorIndex - 1;
-        var prevImage = $('.slider__item').eq(prevImageIndex);
-        var prevIndicator = $('.indicators__item').eq(prevIndicatorIndex);
+        var prevImage = $('.works__slider__item').eq(prevImageIndex);
+        var prevIndicator = $('.works__slider__indicators__item').eq(prevIndicatorIndex);
         currentImage.fadeOut(1000);
         currentImage.removeClass('current');
         currentIndicator.removeClass('current');
