@@ -29,7 +29,7 @@ body{
 }
 
 .content-wrapper{
-  width: 1600px;
+  //width: 1600px;
 }
 
 .header{
@@ -39,6 +39,9 @@ body{
   height: 1070px;
   &__top-panel{
     margin: 0 245px 0 245px;
+    @media screen and (max-width: 1280px){
+      margin: 0 50px 0 50px;
+    }
     padding-top: 36px;
     display: flex;
     justify-content: space-between;
@@ -76,6 +79,10 @@ body{
       text-transform: uppercase;
       margin: 39px;
       margin-top: 298px;
+
+      @media screen and (max-width: 1280px){
+        font-size: 60px;
+      }
     }
     &__add{
       color: #fefdfd;
@@ -89,14 +96,33 @@ body{
 }
 
 .about-us{
-  padding: 122px 215px 120px 215px;
-  display: flex;
+  padding: 122px 0 120px 0;
+  //display: flex;
   background-color: #ebebeb;
+
+  &__content{
+    width: 1170px;
+
+    @media screen and (max-width: 1280px){
+      width: 920px;
+    }
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 
   &__icon{
     min-width: 380px;
     height: 555px;
     background: rgba(10,50,150,0.3) url("../img/deathtostock-wired8.png");
+    background-size: cover;
+
+    @media screen and (max-width: 1280px){
+      min-width: 342px;
+      height: 499.5px;
+    }
+
     &__item{
       margin: 75px 0 44px;
     }
@@ -112,7 +138,12 @@ body{
     color: #665f60;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
-    font-weight: 400
+    font-weight: 400;
+
+    @media screen and (max-width: 1280px){
+      margin-left: 60px;
+    }
+
   }
   &__button{
     margin-left: 348px;
@@ -125,6 +156,11 @@ body{
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-style: italic;
+    display: block;
+
+    @media screen and (max-width: 1280px){
+      margin: 0 auto;
+    }
   }
 }
 
@@ -142,9 +178,18 @@ body{
 }
 
 .services{
-  padding: 0 215px 0 215px;
   display: flex;
   background-color: #ebebeb;
+
+  &__content{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+
+    @media screen and (max-width: 1280px){
+      width: 920px;
+    }
+  }
 
   &__table{
     display: flex;
@@ -156,6 +201,12 @@ body{
       height: 400px;
       text-align: center;
 
+      @media screen and (max-width: 1280px){
+        min-width: 300px;
+        max-width: 300px;
+        height: 315px;
+      }
+
       &--light{
         background-color: #ebebeb;
       }
@@ -166,6 +217,9 @@ body{
 
       &__image{
         margin-top: 99px;
+        @media screen and (max-width: 1280px){
+          margin-top: 50px;
+        }
       }
 
       &__title{
@@ -191,6 +245,13 @@ body{
     width: 410px;
     height: 800px;
     background: rgba(10,50,150,0.3) url("../img/unsplash-523ae1f5502d6-1.png");
+    background-size: cover;
+
+    @media screen and (max-width: 1280px){
+      min-width: 320px;
+      max-width: 320px;
+      height: 630px;
+    }
 
     &__item{
       margin: 116px 0 32px;
@@ -300,10 +361,16 @@ body{
 
     &__prev{
       margin-left: 162px;
+      @media screen and (max-width: 1280px){
+        margin-left: 50px;
+      }
     }
 
     &__next{
       margin-right: 162px;
+      @media screen and (max-width: 1280px){
+        margin-right: 50px;
+      }
     }
   }
 }
@@ -328,6 +395,9 @@ body{
   &__slider{
     align-items: center;
     margin: 0 112px 0 106px;
+    @media screen and (max-width: 1280px){
+      margin: 0 42px 0 36px;
+    }
 
     &__body{
       display: flex !important;
