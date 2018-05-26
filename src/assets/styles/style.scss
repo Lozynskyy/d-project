@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:300, 400,400i');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
 
@@ -34,6 +34,8 @@ body{
 
 .header{
   background: rgba(10,50,150,0.3)  url("../img/deathtostock-wired7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 1070px;
   &__top-panel{
     margin: 0 245px 0 245px;
@@ -485,4 +487,27 @@ body{
     }
   }
 
+}
+
+.footer{
+  height: 185px;
+  background-color: #9f9acf;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__rights{
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+  }
+
+  &__icon-panel{
+
+    &__item{
+      margin: 10px;
+    }
+  }
 }
