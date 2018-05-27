@@ -5,9 +5,16 @@ if(document.documentElement.clientWidth > 1440){
         nextArrow: "<img src='img/interface---arrow-right-b.png'>",
         prevArrow: "<img src='img/interface---arrow-left-b.png'>"
     });
-} else if(document.documentElement.clientWidth <= 1440) {
+} else if(document.documentElement.clientWidth <= 1440 && document.documentElement.clientWidth >= 800) {
     $('.team__slider__body').slick({
         slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: "<img src='img/interface---arrow-right-b.png'>",
+        prevArrow: "<img src='img/interface---arrow-left-b.png'>"
+    });
+} else if(document.documentElement.clientWidth <= 799) {
+    $('.team__slider__body').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: "<img src='img/interface---arrow-right-b.png'>",
         prevArrow: "<img src='img/interface---arrow-left-b.png'>"
