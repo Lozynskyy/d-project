@@ -37,9 +37,14 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: 1070px;
+
+  @media screen and (max-width: 1023px){
+    height: 800px;
+  }
+
   &__top-panel{
     margin: 0 245px 0 245px;
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       margin: 0 50px 0 50px;
     }
     padding-top: 36px;
@@ -80,8 +85,12 @@ body{
       margin: 39px;
       margin-top: 298px;
 
-      @media screen and (max-width: 1280px){
+      @media screen and (max-width: 1279px){
         font-size: 60px;
+      }
+
+      @media screen and (max-width: 1023px){
+        margin-top: 200px;
       }
     }
     &__add{
@@ -100,11 +109,19 @@ body{
   //display: flex;
   background-color: #ebebeb;
 
+  @media screen and (max-width: 1023px){
+    padding: 50px 0;
+  }
+
   &__content{
     width: 1170px;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       width: 920px;
+    }
+
+    @media screen and (max-width: 1023px){
+      width: 770px;
     }
 
     margin: 0 auto;
@@ -118,7 +135,7 @@ body{
     background: rgba(10,50,150,0.3) url("../img/deathtostock-wired8.png");
     background-size: cover;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       min-width: 342px;
       height: 499.5px;
     }
@@ -131,6 +148,10 @@ body{
   }
   &__description{
     padding-top: 58px;
+
+    @media screen and (max-width: 1023px){
+      padding-top: 0px;
+    }
   }
   &__text{
     margin-left: 123px;
@@ -140,8 +161,12 @@ body{
     font-size: 20px;
     font-weight: 400;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       margin-left: 60px;
+    }
+
+    @media screen and (max-width: 1023px){
+      margin-left: 34px;
     }
 
   }
@@ -158,7 +183,7 @@ body{
     font-style: italic;
     display: block;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       margin: 0 auto;
     }
   }
@@ -186,8 +211,13 @@ body{
     margin: 0 auto;
     display: flex;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       width: 920px;
+    }
+
+    @media screen and (max-width: 1023px){
+      flex-direction: column-reverse;
+      width: 770px;
     }
   }
 
@@ -195,15 +225,30 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 760px;
+
+    @media screen and (max-width: 1279px){
+      width: 600px;
+    }
+
+    @media screen and (max-width: 1023px){
+      width: 770px;
+    }
+
     &__item{
       min-width: 380px;
       max-width: 380px;
       height: 400px;
       text-align: center;
 
-      @media screen and (max-width: 1280px){
+      @media screen and (max-width: 1279px){
         min-width: 300px;
         max-width: 300px;
+        height: 315px;
+      }
+
+      @media screen and (max-width: 1023px){
+        min-width: 385px;
+        max-width: 385px;
         height: 315px;
       }
 
@@ -217,7 +262,7 @@ body{
 
       &__image{
         margin-top: 99px;
-        @media screen and (max-width: 1280px){
+        @media screen and (max-width: 1279px){
           margin-top: 50px;
         }
       }
@@ -237,6 +282,10 @@ body{
         font-size: 18px;
         font-style: italic;
         padding: 0 94px;
+
+        @media screen and (max-width: 1279px){
+          padding: 0 20px;
+        }
       }
     }
   }
@@ -247,14 +296,24 @@ body{
     background: rgba(10,50,150,0.3) url("../img/unsplash-523ae1f5502d6-1.png");
     background-size: cover;
 
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
       min-width: 320px;
       max-width: 320px;
       height: 630px;
     }
 
+    @media screen and (max-width: 1023px){
+      min-width: 770px;
+      max-width: 770px;
+      height: 315px;
+    }
+
     &__item{
       margin: 116px 0 32px;
+
+      @media screen and (max-width: 1023px){
+        margin: 50px 0 10px;
+      }
     }
 
     &__title{
@@ -266,6 +325,10 @@ body{
       font-family: "Open Sans", sans-serif;
       font-size: 17px;
       padding: 110px 32px 0;
+
+      @media screen and (max-width: 1023px){
+        padding: 30px 0;
+      }
     }
   }
 }
@@ -310,6 +373,10 @@ body{
       top: 0;
       left: 0;
       right: 0;
+
+      @media screen and (max-width: 1023px){
+        width: 700px;
+      }
     }
 
     &__item{
@@ -321,25 +388,31 @@ body{
       display: none;
       width: 730px;
       height: 546px;
+      background-size: cover;
+
+      @media screen and (max-width: 1023px){
+        width: 700px;
+        height: 525px;
+      }
 
       &.current{
         display: block;
       }
 
       &:first-child{
-        background: url("../img/slide2.png");
+        background-image: url("../img/slide2.png");
       }
 
       &:nth-child(2){
-        background: url("../img/campofr-o-home-a1-1800.png");
+        background-image: url("../img/campofr-o-home-a1-1800.png");
       }
 
       &:nth-child(3){
-        background: url("../img/slide3.png");
+        background-image: url("../img/slide3.png");
       }
 
       &:nth-child(4){
-        background: url("../img/slide4.png");
+        background-image: url("../img/slide4.png");
       }
     }
 
@@ -361,15 +434,27 @@ body{
 
     &__prev{
       margin-left: 162px;
-      @media screen and (max-width: 1280px){
+      cursor: pointer;
+
+      @media screen and (max-width: 1279px){
         margin-left: 50px;
+      }
+
+      @media screen and (max-width: 1023px){
+        margin-left: 10px;
       }
     }
 
     &__next{
       margin-right: 162px;
-      @media screen and (max-width: 1280px){
+      cursor: pointer;
+
+      @media screen and (max-width: 1279px){
         margin-right: 50px;
+      }
+
+      @media screen and (max-width: 1023px){
+        margin-right: 10px;
       }
     }
   }
@@ -395,8 +480,13 @@ body{
   &__slider{
     align-items: center;
     margin: 0 112px 0 106px;
-    @media screen and (max-width: 1280px){
+
+    @media screen and (max-width: 1279px){
       margin: 0 42px 0 36px;
+    }
+
+    @media screen and (max-width: 1279px){
+      margin: 0;
     }
 
     &__body{
@@ -467,17 +557,29 @@ body{
 .slick-arrow{
   margin: 56px;
   cursor: pointer;
+
+  @media screen and (max-width: 1023px){
+    margin: 10px;
+  }
 }
 
 #map {
   width: 100%;
   height: 900px;
   background-color: grey;
+
+  @media screen and (max-width: 1023px){
+    height: 800px;
+  }
 }
 
 .contact{
   height: 900px;
   margin-top: -36px;
+
+  @media screen and (max-width: 1023px){
+    height: 800px;
+  }
 
   &__content{
     text-align: center;
@@ -485,6 +587,10 @@ body{
     position: relative;
     top: -900px;
     overflow-y: hidden;
+
+    @media screen and (max-width: 1023px){
+      top: -800px;
+    }
   }
 
   &__icon{
@@ -499,6 +605,10 @@ body{
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 205px;
+
+    @media screen and (max-width: 1023px){
+      margin-bottom: 105px;
+    }
   }
 
   &__form{
@@ -514,6 +624,10 @@ body{
       line-height: 18px;
       padding-left: 27px;
       margin: 16px;
+
+      @media screen and (max-width: 1023px){
+        width: 287px;
+      }
 
       &::placeholder{
         color: #ffffff;
@@ -533,6 +647,10 @@ body{
       padding-left: 27px;
       padding-top: 24px;
       margin: 11px;
+
+      @media screen and (max-width: 1023px){
+        width: 636px;
+      }
 
       &::placeholder{
         color: #ffffff;
