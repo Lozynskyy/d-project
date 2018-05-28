@@ -819,14 +819,17 @@ a, button, input[type="submit"], input[type="button"]{
     background: rgba(10,50,150,0.3);
     position: relative;
     top: -900px;
+    height: 900px;
     overflow-y: hidden;
 
     @media screen and (max-width: 1023px){
       top: -800px;
+      height: 800px;
     }
 
     @media screen and (max-width: 799px){
       top: -764px;
+      height: 764px;
     }
   }
 
