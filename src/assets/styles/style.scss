@@ -28,6 +28,41 @@ body{
   margin: 0;
 }
 
+a, button, input[type="submit"], input[type="button"]{
+  transition:
+  border-color .1s ease-in,
+  color .1s ease-in,
+  background-color .1s ease-in;
+  cursor: pointer;
+}
+
+.top-arrow{
+  width: 84px;
+  height: 84px;
+  background-color: rgba(159,154,207, 0.7);
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media screen and (max-width: 799px){
+    width: 54px;
+    height: 54px;
+  }
+
+  &__img{
+    display: block;
+
+    @media screen and (max-width: 799px){
+      width: 25px;
+    }
+  }
+}
+
 .content-wrapper{
   //width: 1600px;
 }
